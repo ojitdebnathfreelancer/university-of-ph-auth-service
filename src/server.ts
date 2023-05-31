@@ -9,8 +9,8 @@ async function dbConnect() {
     app.listen(config.port, () => {
       console.log(`University app listening on port ${config.port}`)
     })
-  } catch (error: any) {
-    console.log(error.message)
+  } catch (error: unknown) {
+    console.log(error)
   }
 }
 

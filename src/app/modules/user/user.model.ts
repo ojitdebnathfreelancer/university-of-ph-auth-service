@@ -3,7 +3,7 @@ import { userType } from './user.inferface'
 
 type UserModel = Model<userType, object>
 
-const userSchema = new Schema<userType>(
+const userSchema = new Schema<userType, UserModel>(
   {
     id: {
       type: String,
