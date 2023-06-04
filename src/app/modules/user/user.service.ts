@@ -1,4 +1,5 @@
 import config from '../../../config'
+import ApiError from '../../../errors/ApiErrors'
 import { userType } from './user.inferface'
 import { User } from './user.model'
 import { generateUserId } from './user.utils'
@@ -20,7 +21,7 @@ export const createUserService = async (
 
   const createdUser = await User.create(user)
   if (!createdUser) {
-    throw new Error('Filed to create user')
+    throw new ApiError(400, 'Filed to create user')
   }
   return createdUser
 }
