@@ -1,0 +1,20 @@
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-06T14:24:51.801Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-06T14:24:51.823Z'
+}
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-06T14:25:30.371Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-06T14:25:30.387Z'
+}

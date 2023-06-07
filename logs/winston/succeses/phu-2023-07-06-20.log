@@ -1,0 +1,70 @@
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T14:44:25.235Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T14:44:25.257Z'
+}
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T14:46:28.178Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T14:46:28.196Z'
+}
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T14:49:49.160Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T14:49:49.177Z'
+}
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T14:53:01.048Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T14:53:01.066Z'
+}
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T14:54:22.909Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T14:54:22.926Z'
+}
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T14:55:42.177Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T14:55:42.194Z'
+}
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T14:58:59.209Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T14:58:59.222Z'
+}

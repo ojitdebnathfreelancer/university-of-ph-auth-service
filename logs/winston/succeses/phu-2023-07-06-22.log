@@ -1,0 +1,26 @@
+{
+  message: 'Database connected 🔥',
+  level: 'info',
+  timestamp: '2023-06-07T16:00:06.712Z'
+}
+{
+  message: 'University app listening on port 5000',
+  level: 'info',
+  timestamp: '2023-06-07T16:00:06.724Z'
+}
+Wed Jun 07 2023 22:3:5 } [undefined] info: Database connected 🔥
+Wed Jun 07 2023 22:3:5 } [undefined] info: University app listening on port 5000
+Wed Jun 07 2023 22:4:7 } [undefined] info: Database connected 🔥
+Wed Jun 07 2023 22:4:7 } [undefined] info: University app listening on port 5000
+Wed Jun 07 2023 22:7:5 } [PH] info: Database connected 🔥
+Wed Jun 07 2023 22:7:5 } [PH] info: University app listening on port 5000
+6/7/2023 22:8:19 } [PH] info: Database connected 🔥
+6/7/2023 22:8:19 } [PH] info: University app listening on port 5000
+6/7/2023 22:10:29 } [PH] info: Database connected 🔥
+6/7/2023 22:10:29 } [PH] info: University app listening on port 5000
+6/7/2023 22:11:22 } [PH] info: Database connected 🔥
+6/7/2023 22:11:22 } [PH] info: University app listening on port 5000
+6/7/2023 22:18:2 } [PH] info: Database connected 🔥
+6/7/2023 22:18:3 } [PH] info: University app listening on port 5000
+6/7/2023 22:18:43 } [PH] info: Database connected 🔥
+6/7/2023 22:18:43 } [PH] info: University app listening on port 5000

@@ -1,0 +1,5 @@
+{
+  message: 'error tester',
+  level: 'error',
+  timestamp: '2023-06-05T17:03:16.789Z'
+}

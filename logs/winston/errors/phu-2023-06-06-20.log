@@ -1,0 +1,10 @@
+{
+  message: 'connection 1 to 13.234.255.239:27017 closed',
+  level: 'error',
+  timestamp: '2023-06-06T14:25:46.606Z'
+}
+{
+  message: 'connection 1 to 13.234.255.239:27017 closed',
+  level: 'error',
+  timestamp: '2023-06-06T14:51:10.901Z'
+}

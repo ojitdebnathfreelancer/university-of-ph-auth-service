@@ -1,0 +1,80 @@
+{
+  message: '[\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  level: 'error',
+  timestamp: '2023-06-06T15:42:44.982Z'
+}
+{
+  message: '[\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  level: 'error',
+  timestamp: '2023-06-06T15:45:53.657Z'
+}
+{
+  message: '[\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  level: 'error',
+  timestamp: '2023-06-06T15:51:51.384Z'
+}
+{
+  message: '[\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  level: 'error',
+  timestamp: '2023-06-06T15:58:04.437Z'
+}
+{
+  message: '[\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  level: 'error',
+  timestamp: '2023-06-06T15:58:30.231Z'
+}

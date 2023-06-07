@@ -1,7 +1,5 @@
-import { Model, Schema, model } from 'mongoose'
-import { userType } from './user.inferface'
-
-type UserModel = Model<userType, object>
+import { Schema, model } from 'mongoose'
+import { UserModel, userType } from './user.inferface'
 
 const userSchema = new Schema<userType, UserModel>(
   {

@@ -1,0 +1,32 @@
+{
+  message: '[\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  level: 'error',
+  timestamp: '2023-06-06T16:05:35.950Z'
+}
+{
+  message: '[\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  level: 'error',
+  timestamp: '2023-06-06T16:08:07.620Z'
+}

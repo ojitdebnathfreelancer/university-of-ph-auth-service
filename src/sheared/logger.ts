@@ -1,26 +1,24 @@
 import { createLogger, format, transports } from 'winston'
 import path from 'path'
-const { combine, timestamp, printf, prettyPrint } = format
+const { combine, timestamp, printf, label } = format
 import DailyRotateFile from 'winston-daily-rotate-file'
 
-// custom logger format
 const myFormat = printf(({ level, message, label, timestamp }) => {
   const date = new Date(timestamp)
-  const hours = date.getHours()
+  const hour = date.getHours()
   const minutes = date.getMinutes()
   const seconds = date.getSeconds()
-  return `${date.toString()} ${hours}:${minutes}:${seconds} [${label}] ${level}: ${message}`
+  return `${date.toLocaleDateString()} ${hour}:${minutes}:${seconds} } [${label}] ${level}: ${message}`
 })
 
 // success logger
 export const logger = createLogger({
   level: 'info',
-  format: combine(timestamp(), myFormat, prettyPrint()),
+  format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
       filename: path.join(
-        // eslint-disable-next-line no-undef
         process.cwd(),
         'logs',
         'winston',
@@ -38,12 +36,11 @@ export const logger = createLogger({
 // error logger
 export const errorLogger = createLogger({
   level: 'error',
-  format: combine(timestamp(), myFormat, prettyPrint()),
+  format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
       filename: path.join(
-        // eslint-disable-next-line no-undef
         process.cwd(),
         'logs',
         'winston',

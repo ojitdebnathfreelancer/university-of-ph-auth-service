@@ -34,6 +34,31 @@
             "date": 1685891450011,
             "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-04-21.log",
             "hash": "5cb8ee0ca09e26c12c49cc1f1bc152ec7d65c4efe4d1d2d0dc5e80f30b28b7d3"
+        },
+        {
+            "date": 1685976235830,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-05-20.log",
+            "hash": "8023dde5bbbc767d89fe754335dbe71b003d35cc46dd7616b8cf1202c25b430f"
+        },
+        {
+            "date": 1685977476239,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-05-21.log",
+            "hash": "896f1dacc3c2e91841d019c3bb56e26bbd760f60d62756b05930602bff3b7611"
+        },
+        {
+            "date": 1685980877359,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-05-22.log",
+            "hash": "6e6289db2991b869bbd4a942c0d97283730cf8815742555599da69aa1af47320"
+        },
+        {
+            "date": 1685984440514,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-05-23.log",
+            "hash": "12bdcb9bcdad19ec5f17e31268c32620bdfe8a8ca97bed17722af6caa7a7ba75"
+        },
+        {
+            "date": 1686154900167,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-07-22.log",
+            "hash": "cab12ed9b77961f23740f06de93350d8fc15dcf934553a9aaa98827fc3df9877"
         }
     ],
     "hashType": "sha256"
