@@ -1,50 +1,50 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\.a43d9c49d23796de9910e8cefe71dc32c6e20860-audit.json",
+  "files": [
+    {
+      "date": 1685864337198,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-04-06-13.log",
+      "hash": "67c7f2a48af31be3af71958e2c36bcfb90a317d6a127b1ce1c4c939a15149f04"
     },
-    "auditLog": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\.a43d9c49d23796de9910e8cefe71dc32c6e20860-audit.json",
-    "files": [
-        {
-            "date": 1685864337198,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-04-06-13.log",
-            "hash": "67c7f2a48af31be3af71958e2c36bcfb90a317d6a127b1ce1c4c939a15149f04"
-        },
-        {
-            "date": 1685984592649,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-05-06-23.log",
-            "hash": "c0a63df4838905c21829d7f1ecd5e08226fc7b3c2419207392962a1aa71bc60c"
-        },
-        {
-            "date": 1686061396596,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-06-06-20.log",
-            "hash": "d176a993d9cc644c0154ef7762affe20962e7be66850d3c7cb12fa469916411d"
-        },
-        {
-            "date": 1686066141302,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-06-06-21.log",
-            "hash": "020c9eb9c1ed46c1168c4767bdc904ad302d1ffbbb83d1bb83a71f7f1dab5323"
-        },
-        {
-            "date": 1686067253277,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-06-06-22.log",
-            "hash": "2d541b2013eb3771768358127462010c5c754d2ef45128b2430aee51827e9fd6"
-        },
-        {
-            "date": 1686149058971,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-07-06-20.log",
-            "hash": "4a9baf9343ab6b568f6c99b62cee1763de9dfb2fb7b57d15bb11f3edb231c3c9"
-        },
-        {
-            "date": 1686150038207,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-07-06-21.log",
-            "hash": "45daa4e35a29d7071e052dbeed94f06aab6242fb80cd05e08976d52219bf7baf"
-        },
-        {
-            "date": 1686153605043,
-            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-07-06-22.log",
-            "hash": "4730687fcfd6766dbe2234293d22ac8cc20431c92e0f022f5b5eb716f533af1a"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1685984592649,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-05-06-23.log",
+      "hash": "c0a63df4838905c21829d7f1ecd5e08226fc7b3c2419207392962a1aa71bc60c"
+    },
+    {
+      "date": 1686061396596,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-06-06-20.log",
+      "hash": "d176a993d9cc644c0154ef7762affe20962e7be66850d3c7cb12fa469916411d"
+    },
+    {
+      "date": 1686066141302,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-06-06-21.log",
+      "hash": "020c9eb9c1ed46c1168c4767bdc904ad302d1ffbbb83d1bb83a71f7f1dab5323"
+    },
+    {
+      "date": 1686067253277,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-06-06-22.log",
+      "hash": "2d541b2013eb3771768358127462010c5c754d2ef45128b2430aee51827e9fd6"
+    },
+    {
+      "date": 1686149058971,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-07-06-20.log",
+      "hash": "4a9baf9343ab6b568f6c99b62cee1763de9dfb2fb7b57d15bb11f3edb231c3c9"
+    },
+    {
+      "date": 1686150038207,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-07-06-21.log",
+      "hash": "45daa4e35a29d7071e052dbeed94f06aab6242fb80cd05e08976d52219bf7baf"
+    },
+    {
+      "date": 1686153605043,
+      "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\succeses\\phu-2023-07-06-22.log",
+      "hash": "4730687fcfd6766dbe2234293d22ac8cc20431c92e0f022f5b5eb716f533af1a"
+    }
+  ],
+  "hashType": "sha256"
 }
