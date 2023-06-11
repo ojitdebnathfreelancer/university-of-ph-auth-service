@@ -1,12 +1,10 @@
 import config from '../../../config'
 import ApiError from '../../../errors/ApiErrors'
-import { userType } from './user.inferface'
+import { IUser } from './user.inferface'
 import { User } from './user.model'
 import { generateUserId } from './user.utils'
 
-export const createUserService = async (
-  user: userType
-): Promise<userType | null> => {
+export const createUserService = async (user: IUser): Promise<IUser | null> => {
   // auto generated incremental id
   const userId = await generateUserId()
 

@@ -1,17 +1,20 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { RequestHandler } from 'express'
+import { Request, Response } from 'express'
 import { createUserService } from './user.service'
+import catchAsync from '../../../sheared/catchAsync'
+import sendResponse from '../../../sheared/sendResponse'
+import httpStatus from 'http-status'
+import { IUser } from './user.inferface'
 
-export const createUserController: RequestHandler = async (req, res, next) => {
-  try {
+export const createUserController = catchAsync(
+  async (req: Request, res: Response) => {
     const user = req.body.user
     const result = await createUserService(user)
-    res.status(200).send({
-      scuccess: true,
+
+    sendResponse<IUser>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Successfully created semester',
       data: result,
-      message: 'user created successfully',
     })
-  } catch (error: any) {
-    next(error)
   }
-}
+)

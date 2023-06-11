@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose'
-import { UserModel, userType } from './user.inferface'
+import { UserModel, IUser } from './user.inferface'
 
-const userSchema = new Schema<userType, UserModel>(
+const userSchema = new Schema<IUser, UserModel>(
   {
     id: {
       type: String,
@@ -22,4 +22,4 @@ const userSchema = new Schema<userType, UserModel>(
   }
 )
 
-export const User = model<userType, UserModel>('User', userSchema)
+export const User = model<IUser, UserModel>('User', userSchema)
