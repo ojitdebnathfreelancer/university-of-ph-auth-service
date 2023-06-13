@@ -139,6 +139,36 @@
             "date": 1686495818384,
             "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-11-21.log",
             "hash": "07c9cdcd208d92b3cf2be9674f805c16ec4b506b67c4964dffcc8c45293d1dff"
+        },
+        {
+            "date": 1686579635345,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-12-20.log",
+            "hash": "e7f312636cf5279e8f89be1dda2bc90baafea8717ede9faa18760d439f770d26"
+        },
+        {
+            "date": 1686582163307,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-12-21.log",
+            "hash": "68b9186af9c7dbd72fbf3de777216c9507351819829c7078e379deb6dcbf17e6"
+        },
+        {
+            "date": 1686586338070,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-12-22.log",
+            "hash": "8cca0491a1f8cb121aa68c7158a6abb514c80416d659305b6776a63c79173475"
+        },
+        {
+            "date": 1686667741515,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-13-20.log",
+            "hash": "36760c3c73cad26e41c7c11197a60357226b112bd47256a438534258ea2c1a49"
+        },
+        {
+            "date": 1686668504650,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-13-21.log",
+            "hash": "2565eb559ba9be32125407fa850c670243b0811a246cae42c221378cd1986b53"
+        },
+        {
+            "date": 1686672086058,
+            "name": "D:\\Programing-hero\\Lavel-2-all-works\\univeristy-of-ph-auth-service\\logs\\winston\\errors\\phu-2023-06-13-22.log",
+            "hash": "b474933d271dba21b21b16119b38058259b856615be94acd30549a3baeb6a2cb"
         }
     ],
     "hashType": "sha256"

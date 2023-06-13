@@ -1,6 +1,9 @@
 import httpStatus from 'http-status'
 import ApiError from '../../../errors/ApiErrors'
-import { academicSemesterTitleCodeMapper } from './academicSemester.constant'
+import {
+  academicSemesterSearchbaleFields,
+  academicSemesterTitleCodeMapper,
+} from './academicSemester.constant'
 import {
   IAcademicSemesterFilters,
   IacademicSemester,
@@ -30,15 +33,22 @@ export const getAllSemesterService = async (
   filters: IAcademicSemesterFilters,
   paginationOptions: IPagigantionOptions
 ): Promise<IGenericResponse<IacademicSemester[]>> => {
-  const { searchTerm } = filters
+  const { searchTerm, ...filtersData } = filters
 
-  const academicSemesterSearchbaleFields = ['title', 'code', 'year']
   const andConditions = []
 
   if (searchTerm) {
     andConditions.push({
       $or: academicSemesterSearchbaleFields.map(field => ({
         [field]: { $regex: searchTerm, $options: 'i' },
+      })),
+    })
+  }
+
+  if (Object.keys(filtersData).length) {
+    andConditions.push({
+      $and: Object.entries(filtersData).map(([field, value]) => ({
+        [field]: value,
       })),
     })
   }
@@ -51,7 +61,9 @@ export const getAllSemesterService = async (
     sortConditions[sortBy] = sortOrder
   }
 
-  const result = await AcademicSemester.find({ $and: andConditions })
+  const whereCondition = andConditions.length > 0 ? { $and: andConditions } : {}
+
+  const result = await AcademicSemester.find(whereCondition)
     .sort(sortConditions)
     .skip(skip)
     .limit(limit)
@@ -65,4 +77,35 @@ export const getAllSemesterService = async (
     },
     data: result,
   }
+}
+
+export const getSingleSemesterService = async (
+  id: string
+): Promise<IacademicSemester | null> => {
+  const result = AcademicSemester.findById({ _id: id })
+  return result
+}
+
+export const academicSemeisterUpdateService = async (
+  data: Partial<IacademicSemester>,
+  id: string
+): Promise<IacademicSemester | null> => {
+  if (
+    data.code &&
+    data.title &&
+    academicSemesterTitleCodeMapper[data?.title] !== data?.code
+  ) {
+    throw new ApiError(
+      httpStatus.BAD_REQUEST,
+      `This semester code is ${
+        academicSemesterTitleCodeMapper[data.title]
+      } but you put ${data.code}`
+    )
+  }
+
+  const filter = { _id: id }
+  const result = await AcademicSemester.findOneAndUpdate(filter, data, {
+    new: true,
+  })
+  return result
 }

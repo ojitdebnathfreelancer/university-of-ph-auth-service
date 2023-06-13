@@ -8,6 +8,7 @@ import ApiError from '../../errors/ApiErrors'
 import { errorLogger } from '../../sheared/logger'
 import { ZodError } from 'zod'
 import handleZodError from '../../errors/handelZodError'
+import handelCastError from '../../errors/handelCastError'
 
 const globalErrorHandeler: ErrorRequestHandler = (error, req, res, next) => {
   config.env === 'development'
@@ -25,6 +26,11 @@ const globalErrorHandeler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages = simpleFieldErr.errorMessages
   } else if (error instanceof ZodError) {
     const simplifiedErr = handleZodError(error)
+    statusCode = simplifiedErr.statusCode
+    message = simplifiedErr.message
+    errorMessages = simplifiedErr.errorMessages
+  } else if (error.name === 'CastError') {
+    const simplifiedErr = handelCastError(error)
     statusCode = simplifiedErr.statusCode
     message = simplifiedErr.message
     errorMessages = simplifiedErr.errorMessages
@@ -57,9 +63,6 @@ const globalErrorHandeler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   })
-  if (config.env === 'production') {
-    errorLogger.error(error)
-  }
   next()
 }
 export default globalErrorHandeler
