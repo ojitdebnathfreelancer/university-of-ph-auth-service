@@ -4,6 +4,7 @@ import { validateRequest } from '../../middlewares/validateRequest'
 import {
   academicSemisterUpdateController,
   createAcademicSemesterController,
+  deleteAcademicSemesterController,
   getAllSemesterController,
   getSingleSemesterController,
 } from './academicSemester.controller'
@@ -19,11 +20,11 @@ router
 
 router
   .route('/:id')
+  .get(getSingleSemesterController)
   .patch(
     validateRequest(academicSemesterValidation.updateAcademicZodSchema),
     academicSemisterUpdateController
   )
-
-router.route('/:id').get(getSingleSemesterController)
+  .delete(deleteAcademicSemesterController)
 
 export const academicSemesterRoute = router

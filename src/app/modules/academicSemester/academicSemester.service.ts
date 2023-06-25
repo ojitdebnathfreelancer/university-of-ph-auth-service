@@ -34,7 +34,6 @@ export const getAllSemesterService = async (
   paginationOptions: IPagigantionOptions
 ): Promise<IGenericResponse<IacademicSemester[]>> => {
   const { searchTerm, ...filtersData } = filters
-
   const andConditions = []
 
   if (searchTerm) {
@@ -107,5 +106,12 @@ export const academicSemeisterUpdateService = async (
   const result = await AcademicSemester.findOneAndUpdate(filter, data, {
     new: true,
   })
+  return result
+}
+
+export const deleteAcademicSemesterService = async (
+  id: string
+): Promise<IacademicSemester | null> => {
+  const result = await AcademicSemester.findByIdAndDelete(id)
   return result
 }

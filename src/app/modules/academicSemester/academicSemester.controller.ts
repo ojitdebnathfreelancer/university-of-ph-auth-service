@@ -2,6 +2,7 @@ import { Request, Response } from 'express'
 import {
   academicSemeisterUpdateService,
   createAcademicSemesterService,
+  deleteAcademicSemesterService,
   getAllSemesterService,
   getSingleSemesterService,
 } from './academicSemester.service'
@@ -31,7 +32,6 @@ export const getAllSemesterController = catchAsync(
   async (req: Request, res: Response) => {
     const filters = pick(req.query, academicFilterableFields)
     const paginationOptions = pick(req.query, paginationFields)
-
     const result = await getAllSemesterService(filters, paginationOptions)
     sendResponse<IacademicSemester[]>(res, {
       statusCode: httpStatus.OK,
@@ -66,7 +66,21 @@ export const academicSemisterUpdateController = catchAsync(
     sendResponse<IacademicSemester>(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Semister updated successfully',
+      message: 'Semester updated successfully',
+      data: result,
+    })
+  }
+)
+
+export const deleteAcademicSemesterController = catchAsync(
+  async (req: Request, res: Response) => {
+    const id = req.params.id
+    const result = await deleteAcademicSemesterService(id)
+
+    sendResponse<IacademicSemester>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Semester successfully deleted',
       data: result,
     })
   }
